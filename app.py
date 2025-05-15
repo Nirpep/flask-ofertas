@@ -7,10 +7,10 @@ from datetime import datetime
 app = Flask(__name__)
 
 # === Configuración de SQL Server ===
-server = '170.247.128.56'       # Ej: 'localhost\\SQLEXPRESS'
-database = 'dfq'
-username = 'brayan.moreno'
-password = 'DFQSIS2024#'
+server = os.getenv("DB_SERVER")
+database = os.getenv("DB_NAME")
+username = os.getenv("DB_USER")
+password = os.getenv("DB_PASS")
 tabla = 'ofertas'
 
 
