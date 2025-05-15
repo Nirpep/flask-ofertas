@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Subir Excel</title>
+</head>
+<body>
+    <h2>Subir archivo Excel para actualizar SQL Server</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="archivo_excel" accept=".xlsx,.xls" required>
+        <button type="submit">Subir y procesar</button>
+    </form>
+</body>
+</html>
